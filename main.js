@@ -1,3 +1,6 @@
+alert('Gracias por regresar, han pasado unos días, no recuerdo tu nombre, por lo tanto sigues eres un extraño')
+
+
 let askName = prompt('Identíficate extraño, escribe tu nombre correctamente');
     alert('Gracias '+askName+', aun sigues siendo un extraño');
 
@@ -19,3 +22,5 @@ do {
         alert('Año escrito de manera incorrecta, intenta de nuevo');
     }
 } while (askYear);
+
+alert('')
