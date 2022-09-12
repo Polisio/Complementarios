@@ -25,7 +25,6 @@ class Pedido {
     }
 }
 
-
 function comprarProducto() {
     let producto = 0;
     let cantidadProducto = 0;
@@ -67,6 +66,13 @@ function comprarProducto() {
     return compra;
 }
 
+
+
+
+
+
+
+
 alert('Bienvenido a nuestra tienda, estamos en desarrollo, así que por favor, sigue las instrucciones al pie de la letra, Gracias!!')
 
 let nameCostumer = prompt('Por favor ingresa tu nombre.')
@@ -89,4 +95,69 @@ alert("Detalle de tu compra:\n\n"+
 );
 
 
+///////// Array /////////
+
+class Item {
+    constructor(articulo, costo, inventario) {
+        this.articulo = articulo,
+        this.costo = parseFloat(costo),
+        this.inventario = parseFloat(inventario)
+    }
+}
+
+function agregarArticulo() {
+    let articulo = 0;
+    let inventario = 0;
+    let costo = 0;
+
+    while(!articulo || articulo == 0 || articulo > 5) {
+        articulo = parseInt(prompt("¿Qué artículo tejido deseas agregar?:\n 1: Abrigo ($350.00) 20 Piezas \n 2: Juguete ($130.00) 36 Piezas \n 3: Manta ($200.00) 29 Piezas \n 4: Lapicera ($60.00) 18 Piezas\n 5: Artesanía ($260.00) 9 Piezas"));
+    }
+
+    switch(articulo){
+        case 1:
+            articulo = "Abrigo";
+            costo = 350;
+            inventario = 20;
+            break;
+        case 2:
+            articulo = "Juguete";
+            costo = 130;
+            inventario = 36;
+            break;
+        case 3:
+            articulo = "Manta";
+            costo = 200;
+            inventario = 29;
+            break;
+        case 4:
+            articulo = "Lapicera";
+            costo = 60;
+            inventario = 18;
+            break;
+        case 5:
+            articulo = "Artesanía";
+            costo = 260;
+            inventario = 9;
+            break;
+        
+    }
+
+    const items = []
+
+    items.push(new Item (articulo, costo, inventario));
+
+    return items;
+}
+
+
+alert('Ahora necesito que me ayudes a dar de alta un nuevo articulo, de igual manera, te pido que sigas las instrucciones al pie de la letra.')
+
+alert( nameCostumer+', ahora te mostraré la lista de artículos nuevos que daremos de alta')
+
+const alta = agregarArticulo();
+console.log(alta);
+
+alert("Muchas gracias por tu ayuda " + nameCostumer + ", poco a poco iremos agregando más funciones para que la página siga creciendo.");
+alert("Hasta el próximo desafío ... ")
 
