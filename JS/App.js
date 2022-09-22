@@ -1,54 +1,51 @@
-const card = document.getElementById("card");
-
-
-const disfraces = [
+const itemsAnimales = [
     {
         id: 1,
-        nombre: "Vegeta",
+        categoria: "Animales",
+        nombre: "leon",
         precio: 350.00,
-        img: "img/Sayayin.jpg",
-        descripcion: "Disfraz de Sayayin modelo Vegeta.",
-        tallas: "Tallas CH - G",
+        img: "img/leon.jpg",
+        descripcion: "León tejido en crochet.",
     },
     {
         id: 2,
-        nombre: "Princes",
+        categoria: "Animales",
+        nombre: "Elefantes",
         precio: 450.00,
-        img:"img/princes.jpg",
-        descripcion: "Disfraz de Princesa en color rosa.",
-        tallas: "Tallas CH - XL",
+        img:"img/elefantes.jpg",
+        descripcion: "Elefante tejido en crochet, colores azúl y rosa.",
     },
     {
         id: 3,
-        nombre: "Sirenita",
+        categoria: "Animales",
+        nombre: "Perrito de rescate",
         precio: 420.00,
-        img: "img/Ariel.jpg",
-        descripcion: "Disfraz de Sirenita, modelo de la película original.",
-        tallas: "Tallas CH - G",
+        img: "img/frida.jpg",
+        descripcion: "Perrito de rescate 'Frida' tejido en crochet.",
     },
     {
         id: 4,
-        nombre: "Hipo",
+        categoria: "Animales",
+        nombre: "Koala",
         precio: 390.00,
-        img: "img/ipo.jpg",
-        descripcion: 'Disfraz de Hipo "Como entrenar a tu dragón"',
-        tallas: "Tallas CH - XXL",
+        img: "img/koala.jpg",
+        descripcion: "Koala tejido en crochet",
+    },
+    {
+        id: 5,
+        categoria: "Animales",
+        nombre: "Taz",
+        precio: 390.00,
+        img: "img/Taz.jpg",
+        descripcion: "Demonio de Tazmania tejido en crochet",
+    },
+    {
+        id: 6,
+        categoria: "Animales",
+        nombre: "Unicornio",
+        precio: 390.00,
+        img: "img/unicornio.jpg",
+        descripcion: "Unicornio bebé tejido en crochet",
     },
 ];
-
-let carrito = [];
-
-disfraces.forEach((disfraz) => {
-    let informacion = document.createElement("div");
-    informacion.className = "formStyle"
-    informacion.innerHTML = `
-    <img class="styleImgFlt" src = ${disfraz.img}>
-    <p class="style">${disfraz.descripcion}</p>
-    <p class="style">${disfraz.tallas}</p>
-    <label><b>Precio: $ ${disfraz.precio}</b></label><br>
-    <button class="boton" type="submit"><span>Agregar</span></button>
-`;
-
-card.append(informacion);
-});
 

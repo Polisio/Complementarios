@@ -116,7 +116,7 @@ header {
   z-index: -1; }
 
 .headerNav {
-  background-image: url(../src/bgheader.webp);
+  background-image: url(../src/header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
