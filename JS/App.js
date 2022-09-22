@@ -18,7 +18,7 @@ const itemsAnimales = [
     {
         id: 3,
         categoria: "Animales",
-        nombre: "Perrito de rescate",
+        nombre: "Perrito",
         precio: 420.00,
         img: "img/frida.jpg",
         descripcion: "Perrito de rescate 'Frida' tejido en crochet.",
