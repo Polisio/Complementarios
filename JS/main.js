@@ -13,8 +13,8 @@ function vitrina() {
         item.innerHTML = `
         <fieldset class="formStyle">
         <a href="#" data-bs-toggle="modal" data-bs-target="#${itm.nombre}">
-        <img class="w-100 mb-4 rounded modalimg" src = ${itm.img} alt="${itm.descripcion}">
-        </a>
+        <img class="w-50 mb-4 rounded modalimg" src = ${itm.img} alt="${itm.descripcion}">
+        </a><br>
         <div tabindex="-1" aria-labelledby="${itm.nombre}" aria-hidden="true" class="modal fade" id="${itm.nombre}">
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
