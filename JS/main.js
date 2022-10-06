@@ -34,6 +34,11 @@ function vitrina() {
         item.querySelector('button').addEventListener('click', ()=>{
             addItem(itm.id);
 
+            Swal.fire({
+                title: 'Excelente',
+                text: 'Muy buena elección, ya está agregado al carrito.',
+            })
+
         })
 
     })
@@ -138,12 +143,9 @@ form.addEventListener('submit', (e) => {
 
     
     datos.push(datosCliente);
+    
 
     localStorage.setItem("Cliente", JSON.stringify(datos));
-
-    datos.forEach((envio) => {
-        envio = alert( envio.nombre + ' Tus datos han sido guardados para procesar tu envío a ' +envio.ciudadMunicipio+ ', ' +envio.estado+ ', en cuanto termines tu compra.');
-    })
 
     console.log(datos);
 
