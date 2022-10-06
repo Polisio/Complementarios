@@ -37,6 +37,8 @@ function vitrina() {
             Swal.fire({
                 title: 'Excelente',
                 text: 'Muy buena elección, ya está agregado al carrito.',
+                showConfirmButton: false,
+                timer: 3500
             })
 
         })
